@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 class SearchBar extends Component {
     handleSubmit = (e) => {
-        e.prevendDefault();
+        e.preventDefault();
         const form = e.currentTarget;
         const query = form.elements.query.value;
         this.props.onSubmit({ query });
